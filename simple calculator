@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    char op;
+    float n,b;
+    printf("\n====simple calculator======\n");
+    printf("\n entrez le premier nombre:\n");
+    scanf("%f",&n);
+    printf("\n entrez l'operation:\n");
+    scanf(" %c",&op);
+    printf("\n entrez la deuxiemme nombre:\n");
+    scanf("%f",&b);
+
+    switch(op)
+    {
+    case '+':
+        printf("le resultat est: %.2f+%.2f=%.2f",n,b,n+b);
+        break;
+    case '-':
+        printf("le resultat est: %.2f-%.2f=%.2f",n,b,n-b);
+        break;
+    case '*':
+        printf("le resultat est: %.2f*%.2f=%.2f",n,b,n*b);
+        break;
+    case '/':
+    {
+        if (n!=0|| b!=0)
+        {
+            printf("le resultat est: %.2f/%.2f=%.2f",n,b,n/b);
+        }
+        else
+        {
+            printf("\n erreur!\n");
+        }
+    }
+
+        break;
+    default:
+        printf("\nerreur operation!!!\n");
+    }
+    return 0;
+}
