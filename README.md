@@ -1,2 +1,2 @@
-# simple-calculator
-code in c language  that affiche a simple calculator. 
+# projects in c language
+codes and projects in c language. 
